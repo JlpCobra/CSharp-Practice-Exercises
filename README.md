@@ -1,28 +1,38 @@
-# Patient Record Searcher (C#)
+# Patient Record Filter (C#)
 
 ## Description
-This application reads patient data from a text file and allows searching or processing of records.
+This C# console application reads patient records from a text file and displays patients whose account balance meets or exceeds a user-entered minimum balance.
 
 ## Features
-- Reads patient data from a file
-- Processes structured data (ID, name, amount)
-- Displays formatted output
+- Reads patient data from `Patients.txt`
+- Parses comma-separated records
+- Prompts the user for a minimum balance
+- Filters records based on balance
+- Displays matching patient IDs, names, and balances in a formatted table
+- Shows a message when no matching records are found
 
 ## Technologies Used
 - C#
 - .NET
 - File I/O
+- String parsing
+- Console application formatting
 
-## Example Data
-222, Anderson, 2000  
-390, Bell, 2500  
-488, Carter, 1000  
+## Input File Format
+The program expects a text file named `Patients.txt` with records in this format:
+
+222,Anderson,2000  
+390,Bell,2500  
+488,Carter,1000  
+
+Each record contains:
+- Patient ID
+- Patient name
+- Account balance
 
 ## What I Learned
-- File reading and parsing
-- Working with structured data
-- String manipulation and loops
----
-
-## Note
-These exercises were originally completed as part of structured coursework. More recent and independently developed projects can be found in my other repositories.
+- Reading data from files using `FileStream` and `StreamReader`
+- Splitting and parsing comma-separated values
+- Converting strings into numeric data types
+- Filtering records based on user input
+- Formatting console output for readability
