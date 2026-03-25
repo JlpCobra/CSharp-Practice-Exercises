@@ -18,6 +18,11 @@ This C# console application reads patient records from a text file and displays 
 - String parsing
 - Console application formatting
 
+## How to Run
+1. Ensure `Patients.txt` is in the same directory as the program
+2. Run the application
+3. Enter a minimum balance when prompted
+
 ## Input File Format
 The program expects a text file named `Patients.txt` with records in this format:
 
